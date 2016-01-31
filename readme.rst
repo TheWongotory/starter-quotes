@@ -4,6 +4,10 @@ conventions: all man style
 
 check in- ramon
 check in- Karl Wong
+
+Link to repository: https://github.com/TheWongotory/starter-quotes
+
+
 #######################
 Starter Webapp - Quotes
 #######################
