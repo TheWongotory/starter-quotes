@@ -19,9 +19,9 @@ class First extends Application {
         
         $this->render();
     }
-     //-------------------------------------------------------------
+     
     //  This will call on the bob monkhouse quote.
-    //-------------------------------------------------------------
+   
     function zzz() 
     {
         $this->data['pagebody'] = 'justone'; // We want this view
@@ -29,5 +29,14 @@ class First extends Application {
         $this->data = array_merge($this->data, $record);
         $this->render();
     }
+      
+    //  This function will call on the quote that is routed by show/num
    
+        function gimme($id) 
+    {
+        $this->data['pagebody'] = 'justone'; // we want to show this view
+        $record = $this->quotes->get($id); // Grab get method in quotes
+        $this->data = array_merge($this->data, $record);
+        $this->render();
+    }
 }
